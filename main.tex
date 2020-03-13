@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper,titlepage]{article}
+%=============================================
+%Preámbulo
+
+%Idioma
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+
+%Imgágenes y flotantes
+\usepackage{graphicx}
+\usepackage{float}
+
+%Márgenes
+\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+%\usepackage[a4paper,margin=2.54cm]{geometry}
+
+%Encabezado y pie de página
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=3cm]{imagenes/Logo_FIUBA.png}}
+\fancyhead[L]{\includegraphics[width=3cm]{imagenes/Logo_Labi_color.png}}
+\setlength{\headheight}{46pt}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C]{\leftmark}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\author{LABi}
+\title{Curso de KiCad - v5.1.5}
+\date{1C 2020}
+%=============================================
+%Inicio del documento
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\input{que_es_kicad.tex}
+
+\end{document}
